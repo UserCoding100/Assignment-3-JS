@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 3 | COMP1073 Client-Side JavaScript</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Pizza Maker</h1>
+        <form id="pizzaForm">
+            <!-- Student info -->
+            <p id="studentInfo"></p>
+
+            <!-- Delivery type -->
+            <label for="deliveryType">Choose delivery type:</label><br>
+            <select id="deliveryType" name="deliveryType">
+                <option value="dineIn">Dine In</option>
+                <option value="pickUp">Pick Up</option>
+                <option value="delivery">Delivery</option>
+            </select><br><br>
+
+            <!-- Pizza type -->
+            <label for="size">Choose pizza type:</label><br>
+            <select id="size" name="size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="xLarge">X-Large</option>
+            </select><br><br>
+
+            <!-- Crust -->
+            <label for="crust">Choose crust:</label><br>
+            <input type="radio" id="crust" name="crust" value="originalHandTossed">
+            <label for="originalHandTossed">Original Hand-Tossed</label><br>
+            <input type="radio" id="crust" name="crust" value="thinCrust">
+            <label for="thinCrust">Thin Crust</label><br><br>
+
+            <!-- Cheese -->
+            <label for="cheese">Choose cheese:</label><br>
+            <input type="radio" id="cheese" name="cheese" value="extraCheese">
+            <label for="extraCheese">Extra Cheese</label><br>
+            <input type="radio" id="cheese" name="cheese" value="lightOnCheese">
+            <label for="lightOnCheese">Light on Cheese</label><br><br>
+
+            <!-- Toppings -->
+            <label for="choose toppings">Choose toppings:</label><br>
+            <input type="checkbox" id="onions" name="toppings" value="onions">
+            <label for="onions">Onions</label><br>
+            <input type="checkbox" id="tomatoes" name="toppings" value="tomatoes">
+            <label for="tomatoes">Tomatoes</label><br>
+            <input type="checkbox" id="olives" name="toppings" value="olives">
+            <label for="olives">Olives</label><br>
+            <input type="checkbox" id="bellPepper" name="toppings" value="bellPepper">
+            <label for="bellPepper">Bell Pepper</label><br>
+            <input type="checkbox" id="jalapeno" name="toppings" value="jalapeno">
+            <label for="jalapeno">Jalapeno</label><br>
+            <input type="checkbox" id="spinach" name="toppings" value="spinach">
+            <label for="spinach">Spinach</label><br>
+            <input type="checkbox" id="oregano" name="toppings" value="oregano">
+            <label for="oregano">Oregano</label><br>
+            <input type="checkbox" id="chicken" name="toppings" value="chicken">
+            <label for="chicken">Chicken</label><br><br>
+
+            <!-- Dipping sauces -->
+            <label for="dippingSauces">Choose dipping sauces:</label><br>
+            <input type="checkbox" id="habanero" name="dippingSauce" value="habanero">
+            <label for="habanero">Habanero</label><br>
+            <input type="checkbox" id="sweetChili" name="dippingSauce" value="sweetChili">
+            <label for="sweetChili">Sweet Chili</label><br>
+            <input type="checkbox" id="garlic" name="dippingSauce" value="garlic">
+            <label for="garlic">Garlic</label><br><br>
+
+            <!-- Drinks like cola or lemonade -->
+            <label for="drinks">Select drinks:</label><br>
+            <input type="checkbox" id="cola" name="drinks" value="cola">
+            <label for="cola">Cola</label><br>
+            <input type="checkbox" id="lemonade" name="drinks" value="lemonade">
+            <label for="lemonade">Lemonade</label><br>
+            <input type="number" id="drinkQuantity" name="drinkQuantity" min="1" max="10">
+            <label for="drinkQuantity">Quantity:</label><br>
+            <input type="radio" id="bottle" name="bottleCan" value="bottle">
+            <label for="bottle">Bottle</label>
+            <input type="radio" id="can" name="bottleCan" value="can">
+            <label for="can">Can</label><br><br>
+
+            <!-- Order button -->
+            <button type="submit">Order</button>
+        </form>
+        <p id="pizzaDescription"></p>
+    </div>
+    <script src="js/script.js" defer></script>
+</body>
+</html>
